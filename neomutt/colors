@@ -1,0 +1,19 @@
+#vim: filetype=muttrc
+
+# header colors
+color header blue default ".*"
+color header brightblue default "^(From)"
+color header brightblue default "^(Subject)"
+color header blue default "^(CC|BCC)"
+
+mono bold bold
+mono underline underline
+mono indicator reverse
+mono error bold
+
+color normal default default
+color indicator black brightcyan # selected message
+color error brightred default
+color quoted green default
+color status blue default
+

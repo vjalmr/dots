@@ -1,0 +1,30 @@
+source ~/.config/neomutt/colors
+
+set real_name=""
+set from=""
+set sendmail="/usr/bin/msmtp"
+set recall=no
+set sig_on_top=yes
+
+set mailcap_path="~/.config/neomutt/mailcap"
+
+auto_view text/html text/calendar application/ics
+alternative_order text/html text/plain text/enriched text/*
+
+set mbox_type=Maildir
+set folder=~/.mail
+set spool_file=+/
+set header_cache=~/.cache/mutt
+
+set record=+sent
+set postponed=+drafts
+
+set editor="nvim"
+set query_command="abook --mutt-query '%s'"
+set signature=""
+
+macro index,pager I "<shell-escape>mpop<enter>"
+macro index,pager a "<pipe-message>abook --add-email-quiet<return>" "Add this sender to Abook"
+bind editor <Tab> complete-query
+bind index,pager B sidebar-toggle-visible
+

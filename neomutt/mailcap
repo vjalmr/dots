@@ -1,0 +1,13 @@
+# HTML
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+text/plain; nvim %s
+
+# PDF
+application/pdf; /usr/bin/mupdf %s
+
+# Images
+image/png; /usr/bin/feh %s
+image/jpg; /usr/bin/feh %s
+image/jpeg; /usr/bin/feh %s
+image/tiff; /usr/bin/feh %s
+image/bmp; /usr/bin/feh %s
