@@ -1,1 +1,6 @@
+# URxvt.font: -*-terminus-*-r-normal-*-14-*-*-*-*-*-*-1
+# URxvt.letterSpace: -2
 URxvt.font: -*-dina-medium-r-*-*-12-*-*-*-c-*-*-1
+# URxvt.font: xft:GNU IBM 3161 bitmap:style=Sans-Serif:size=17
+# URxvt.font: xft:Cozette:style=Medium
+# URxvt.font: xft:Iosevka Term:size=12
